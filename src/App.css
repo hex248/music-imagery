@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --background-color: #07081a;
+    --secondary-background-color: #0f102b;
+    --foreground-color: #8c91f5;
+    --secondary-foreground-color: rgb(82, 80, 151);
+    --fade-time: 0.3s;
+    --font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin: 0;
+}
+
+.App {
+    background-color: var(--secondary-background-color);
+    display: flex;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.App-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.App-header div {
+    border-radius: 15px;
+    font-family: var(----font-family);
+    font-weight: 700;
+    font-size: calc(5px + 1.5vw);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--secondary-background-color);
+    width: fit-content;
+}
+
+.App-header #name {
+    font-size: calc(5px + 1.5vw);
+}
+
+.artistList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.3vw;
+    justify-content: center;
+
+    padding: 1vw;
+}
+
+.listElement {
+    width: 15vw;
+    /* border: 2px solid var(--foreground-color); */
+    border-radius: 1vw;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+
+    -moz-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+    -moz-transition: background-color 0.2s ease-in;
+    -o-transition: background-color 0.2s ease-in;
+    -webkit-transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+}
+
+.analysisLink {
+    text-decoration: none;
+}
+
+.listElement #itemInfo {
+    margin-top: 1vh;
+}
+
+.listElement:hover {
+    color: var(--background-color);
+    background-color: var(--foreground-color);
+}
+
+.listElement img {
+    border-radius: 1.5vw;
+    border: 0px solid var(--background-color);
+    -moz-transition: border-width 0.1s ease-in;
+    -o-transition: border-width 0.1s ease-in;
+    -webkit-transition: border-width 0.1s ease-in;
+    transition: border-width 0.1s ease-in;
+}
+
+.listElement:hover img {
+    border: 5px solid var(--background-color);
+}
+
+.listElement #name {
+    font-size: calc(5px + 2vw);
+}
+.listElement #artists {
+    font-size: calc(5px + 1vw);
+}
+.listElement #type {
+    font-size: calc(5px + 0.75vw);
+}
+
+.flexBreak {
+    flex-basis: 100%;
+    height: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+.Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: calc(10px + 0.5vmin);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .link:hover {
+        color: var(--background-color);
+        background-color: var(--foreground-color);
+    }
+}
+
+.buttons {
+    padding-bottom: 15px;
+    border: 2px solid var(--foreground-color);
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: var(--secondary-background-color);
+    max-width: 75vw;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--foreground-color);
+    border-radius: 10px;
+    border: 0px double var(--foreground-color);
+}
+
+.transition-1s {
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    transition: all 1s ease-in;
+}
+
+.transition-0-3s {
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.transition-0-2s {
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.transition-0-1s {
+    -moz-transition: all 0.1s ease-in;
+    -o-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}

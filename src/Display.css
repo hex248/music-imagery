@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-info {
+    padding: 2vh;
+    margin: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    background-color: var(--secondary-background-color);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.header-info img {
+    width: 25vw;
+    border-radius: 10px;
+}
