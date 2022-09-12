@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useRef, useEffect, useState } from "react";
+import React from "react";
 
 import analysis from "./data/analysis.json";
 import encode from "./encode.js";
@@ -26,7 +26,7 @@ const App = () => {
                         return (
                             <a className="analysisLink" href={`/artists/${encode(e.artists[0])}/${e.type}s/${encode(e.name)}`}>
                                 <div className="listElement">
-                                    <img src={`/data/photos/previews/${e.photo}`} />
+                                    <img src={`/data/photos/previews/${e.photo}`} alt={e.photo} />
                                     <div className="flexBreak" />
                                     <div id="itemInfo">
                                         <h1 id="name">{e.name}</h1>
