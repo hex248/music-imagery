@@ -6,5 +6,13 @@
         "album": "Flower Boy",
         "textFile": "mr-lonely-tyler-the-creator.txt",
         "photo": "mr-lonely-tyler-the-creator.jpg"
+    },
+    {
+        "type": "song",
+        "name": "November",
+        "artists": ["Tyler, The Creator"],
+        "album": "Flower Boy",
+        "textFile": "november-tyler-the-creator.txt",
+        "photo": "november-tyler-the-creator.jpg"
     }
 ]
