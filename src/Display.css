@@ -1,9 +1,9 @@
 .mainDisplay {
     display: flex;
     justify-content: center;
-    margin: 5vh;
+    margin: 2.5vh;
     gap: 5vh;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .displayInfo {
@@ -18,7 +18,7 @@
     width: 30%;
     max-width: 80%;
     flex-grow: 1;
-    font-size: calc(5px + 0.7vw);
+    font-size: 1vw;
 }
 
 .displayInfo img {
@@ -30,7 +30,26 @@
     flex-shrink: 1;
     font-weight: 600;
     align-self: center;
-    font-size: calc(5px + 0.7vw);
+    font-size: 0.95vw;
     width: 65%;
     flex-grow: 1;
+}
+
+#homeButton {
+    color: var(--background-color);
+    background-color: var(--foreground-color);
+    padding: 5px 15px;
+    font-size: 2vw;
+    display: inline-block;
+    margin: 15px 0px 0px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid var(--foreground-color);
+    transition: 0.15s all ease-in;
+}
+
+#homeButton:hover {
+    color: var(--foreground-color);
+    background-color: var(--background-color);
+    border: 2px solid var(--foreground-color);
 }

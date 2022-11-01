@@ -35,14 +35,19 @@ const Display = () => {
 
     return analysisPiece.name ? (
         <>
-            <div className="mainDisplay">
-                <div className="displayInfo">
-                    <img src={`/data/photos/large/${analysisPiece.photo}`} id="analysisPhoto" alt={analysisPiece.photo} />
-                    {analysisPiece.type === "song" ? <h1 id="songName">Name: {analysisPiece.name}</h1> : <h1 id="albumName">Name: {analysisPiece.album}</h1>}
-                    <h1 id="artistNames">{analysisPiece.artists.length > 1 ? `Artists: ${analysisPiece.artists.join(", ")}` : `Artist: ${analysisPiece.artists[0]}`}</h1>
-                    {analysisPiece.type === "song" ? <h1 id="albumName">Album: {analysisPiece.album}</h1> : null}
+            <div class="main">
+                <a id="homeButton" href="/">
+                    home
+                </a>
+                <div className="mainDisplay">
+                    <div className="displayInfo">
+                        <img src={`/data/photos/large/${analysisPiece.photo}`} id="analysisPhoto" alt={analysisPiece.photo} />
+                        {analysisPiece.type === "song" ? <h1 id="songName">Name: {analysisPiece.name}</h1> : <h1 id="albumName">Name: {analysisPiece.album}</h1>}
+                        <h1 id="artistNames">{analysisPiece.artists.length > 1 ? `Artists: ${analysisPiece.artists.join(", ")}` : `Artist: ${analysisPiece.artists[0]}`}</h1>
+                        {analysisPiece.type === "song" ? <h1 id="albumName">Album: {analysisPiece.album}</h1> : null}
+                    </div>
+                    <p id="mainAnalysis">{text}</p>
                 </div>
-                <p id="mainAnalysis">{text}</p>
             </div>
         </>
     ) : (
