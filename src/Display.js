@@ -23,8 +23,8 @@ const Display = () => {
         setAP(page);
 
         async function getText() {
-            const text = await fetch(`/data/textFiles/${page.textFile}`).then((res) => res.text());
-            setText(text);
+            const tempText = await fetch(`/data/textFiles/${page.textFile}`).then((res) => res.text());
+            setText(tempText);
         }
         getText();
     };
@@ -46,7 +46,9 @@ const Display = () => {
                         <h1 id="artistNames">{analysisPiece.artists.length > 1 ? `Artists: ${analysisPiece.artists.join(", ")}` : `Artist: ${analysisPiece.artists[0]}`}</h1>
                         {analysisPiece.type === "song" ? <h1 id="albumName">Album: {analysisPiece.album}</h1> : null}
                     </div>
-                    <p id="mainAnalysis">{text}</p>
+                    <p id="mainAnalysis" style={{ "white-space": "pre-line" }}>
+                        {text}
+                    </p>
                 </div>
             </div>
         </>
