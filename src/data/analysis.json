@@ -14,5 +14,13 @@
         "album": "Flower Boy",
         "textFile": "mr-lonely-tyler-the-creator.txt",
         "photo": "mr-lonely-tyler-the-creator.jpg"
+    },
+    {
+        "type": "song",
+        "name": "Sweet Life",
+        "artists": ["Frank Ocean"],
+        "album": "channel ORANGE",
+        "textFile": "sweet-life-frank-ocean.txt",
+        "photo": "sweet-life-frank-ocean.jpg"
     }
 ]
