@@ -22,5 +22,13 @@
         "album": "channel ORANGE",
         "textFile": "sweet-life-frank-ocean.txt",
         "photo": "sweet-life-frank-ocean.jpg"
+    },
+    {
+        "type": "song",
+        "name": "Super Rich Kids",
+        "artists": ["Frank Ocean"],
+        "album": "channel ORANGE",
+        "textFile": "super-rich-kids-frank-ocean.txt",
+        "photo": "super-rich-kids-frank-ocean.jpg"
     }
 ]
