@@ -9,6 +9,18 @@
     --font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: var(--secondary-background-color);
+    color: var(--foreground-color);
+}
+
+.Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 h1 {
     font-family: var(--font-family);
     font-weight: 700;
@@ -25,21 +37,21 @@ a {
     background-color: var(--secondary-background-color);
     display: flex;
     border-radius: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
+    margin: 0;
+    /* height: 75vh; */
+    justify-content: center;
 }
 
 .App-header {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 0;
+    align-items: flex-start;
+    /* gap: 50px; */
+    padding: 15px;
+    height: 12.5vh;
 }
 
 .App-header div {
-    border-radius: 15px;
     font-family: var(----font-family);
     font-weight: 700;
     font-size: calc(5px + 1.5vw);
@@ -47,7 +59,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     background-color: var(--secondary-background-color);
-    width: fit-content;
+    /* height: auto; */
 }
 
 .App-header #name {
@@ -55,6 +67,8 @@ a {
 }
 
 .artistList {
+    border-radius: 10px;
+    /* border: 2px solid var(--background-color); */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,12 +76,13 @@ a {
     justify-content: center;
 
     padding: 1vw;
+    width: 95vw;
 }
 
 .listElement {
     width: 15vw;
     /* border: 2px solid var(--foreground-color); */
-    border-radius: 1vw;
+    border-radius: 10px;
     color: var(--foreground-color);
     background-color: var(--background-color);
 
@@ -101,7 +116,7 @@ a {
 }
 
 .listElement img {
-    border-radius: 1.5vw;
+    border-radius: 5px;
     border: 0px solid var(--background-color);
     -moz-transition: border-width 0.1s ease-in;
     -o-transition: border-width 0.1s ease-in;
@@ -114,10 +129,10 @@ a {
 }
 
 .listElement #name {
-    font-size: calc(5px + 2vw);
+    font-size: calc(5px + 1.5vw);
 }
 .listElement #artists {
-    font-size: calc(5px + 1vw);
+    font-size: calc(5px + 0.75vw);
 }
 .listElement #type {
     font-size: calc(5px + 0.75vw);
@@ -126,18 +141,6 @@ a {
 .flexBreak {
     flex-basis: 100%;
     height: 0;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--foreground-color);
-}
-
-.Main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .link {

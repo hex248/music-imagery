@@ -31,7 +31,7 @@ const App = () => {
                                     <div id="itemInfo">
                                         <h1 id="name">{e.name}</h1>
                                         <h1 id="artists">{e.artists.join(", ")}</h1>
-                                        <h1 id="type">({capitalise(e.type)})</h1>
+                                        {/* <h1 id="type">({capitalise(e.type)})</h1> */}
                                     </div>
                                 </div>
                             </a>
