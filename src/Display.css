@@ -1,30 +1,43 @@
 .mainDisplay {
     display: flex;
-    justify-content: center;
-    margin: 2.5vh;
-    gap: 5vh;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     /* flex-wrap: wrap; */
 }
 
 .displayInfo {
-    padding: 2vh;
+    /* padding: 10px 20px 10px 20px; */
     display: flex;
-    flex-direction: column;
-    gap: 2vh;
-    justify-content: space-evenly;
-    background-color: var(--secondary-background-color);
-    border-radius: 15px;
-    flex-shrink: 1;
-    width: 30%;
-    max-width: 80%;
-    flex-grow: 1;
-    font-size: 1vw;
-    height: 50%;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--background-color); */
+    border-radius: 5px;
+    width: 45%;
+    height: 30vh;
 }
 
 .displayInfo img {
     /* width: 25vw; */
     border-radius: 10px;
+    height: inherit;
+}
+
+.displayInfo .text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: calc(10px + 0.5vh);
+    height: 50%;
+}
+
+.displayInfo .text h1 {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #mainAnalysis {
@@ -32,7 +45,7 @@
     font-weight: 600;
     align-self: center;
     font-size: 0.95vw;
-    width: 65%;
+    width: 60%;
     flex-grow: 1;
 }
 
