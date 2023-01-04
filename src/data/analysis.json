@@ -30,5 +30,13 @@
         "album": "channel ORANGE",
         "textFile": "super-rich-kids-frank-ocean.txt",
         "photo": "super-rich-kids-frank-ocean.jpg"
+    },
+    {
+        "type": "song",
+        "name": "Bad Religion",
+        "artists": ["Frank Ocean"],
+        "album": "channel ORANGE",
+        "textFile": "bad-religion-frank-ocean.txt",
+        "photo": "bad-religion-frank-ocean.jpg"
     }
 ]
