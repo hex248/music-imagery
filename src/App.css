@@ -180,6 +180,43 @@ a {
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 700px) {
+    .App {
+        max-width: 100%;
+    }
+
+    .App-header {
+        height:auto;
+    }
+
+    .App-header div {
+        font-size: calc(15px + 1.5vw);
+    }
+
+    .App-header #name {
+        font-size: calc(15px + 1.5vw);
+    }
+
+    .artistList {
+        gap: 0;
+        margin-bottom:20px;
+    }
+
+    .listElement {
+        width: 75vw;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .listElement #name {
+        font-size: calc(30px + 1.5vw);
+    }
+
+    .listElement #artists {
+        font-size: calc(15px + 1.5vw);
+    }
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
