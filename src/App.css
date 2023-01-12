@@ -123,9 +123,10 @@ a {
     -webkit-transition: border-width 0.1s ease-in;
     transition: border-width 0.1s ease-in;
 }
-
-.listElement:hover img {
-    border: 5px solid var(--background-color);
+@media (hover: hover) and (pointer: fine) {
+    .listElement:hover img {
+        border: 5px solid var(--background-color);
+    }
 }
 
 .listElement #name {
