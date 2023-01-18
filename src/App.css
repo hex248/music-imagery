@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --background-color: #07081a;
-    --secondary-background-color: #0f102b;
-    --foreground-color: #8c91f5;
-    --secondary-foreground-color: rgb(82, 80, 151);
+    --background-color: #1e1d1d;
+    --secondary-background-color: #161616;
+    --foreground-color: #ffffff;
+    --secondary-foreground-color: #dedede;
     --fade-time: 0.3s;
     --font-family: "Montserrat", sans-serif;
 }
@@ -80,8 +80,8 @@ a {
 }
 
 .listElement {
-    width: 15vw;
-    /* border: 2px solid var(--foreground-color); */
+    width: 14vw;
+    border: 2px solid var(--background-color);
     border-radius: 10px;
     color: var(--foreground-color);
     background-color: var(--background-color);
@@ -111,21 +111,26 @@ a {
 }
 
 .listElement:hover {
-    color: var(--background-color);
-    background-color: var(--foreground-color);
+    /* color: var(--background-color); */
+    background-color: var(--background-color);
+    border-color: var(--secondary-foreground-color);
 }
 
 .listElement img {
     border-radius: 5px;
     border: 0px solid var(--background-color);
-    -moz-transition: border-width 0.1s ease-in;
-    -o-transition: border-width 0.1s ease-in;
-    -webkit-transition: border-width 0.1s ease-in;
-    transition: border-width 0.1s ease-in;
+    -moz-transition: border-width 0.5s ease-in;
+    -o-transition: border-width 0.5s ease-in;
+    -webkit-transition: border-width 0.5s ease-in;
+    transition: border-width 0.5s ease-in-out;
+    -moz-transition: border-color 0.5s ease-in;
+    -o-transition: border-color 0.5s ease-in;
+    -webkit-transition: border-color 0.5s ease-in;
+    transition: border-color 0.5s ease-in-out;
 }
 @media (hover: hover) and (pointer: fine) {
     .listElement:hover img {
-        border: 5px solid var(--background-color);
+        border: 5px solid var(--secondary-foreground-color);
     }
 }
 
