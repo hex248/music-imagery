@@ -91,15 +91,11 @@ a {
     justify-content: center;
     text-align: center;
     padding: 1vw;
-
-    -moz-transition: color 0.2s ease-in;
-    -o-transition: color 0.2s ease-in;
-    -webkit-transition: color 0.2s ease-in;
-    transition: color 0.2s ease-in;
-    -moz-transition: background-color 0.2s ease-in;
-    -o-transition: background-color 0.2s ease-in;
-    -webkit-transition: background-color 0.2s ease-in;
-    transition: background-color 0.2s ease-in;
+    
+    -moz-transition: border-color 0.2s ease-in;
+    -o-transition: border-color 0.2s ease-in;
+    -webkit-transition: border-color 0.2s ease-in;
+    transition: border-color 0.2s ease-in;
 }
 
 .analysisLink {
@@ -118,15 +114,12 @@ a {
 
 .listElement img {
     border-radius: 5px;
-    border: 0px solid var(--background-color);
-    -moz-transition: border-width 0.5s ease-in;
-    -o-transition: border-width 0.5s ease-in;
-    -webkit-transition: border-width 0.5s ease-in;
-    transition: border-width 0.5s ease-in-out;
-    -moz-transition: border-color 0.5s ease-in;
-    -o-transition: border-color 0.5s ease-in;
-    -webkit-transition: border-color 0.5s ease-in;
-    transition: border-color 0.5s ease-in-out;
+    border: 5px solid var(--background-color);
+
+    -moz-transition: border-color 0.2s ease-in;
+    -o-transition: border-color 0.2s ease-in;
+    -webkit-transition: border-color 0.2s ease-in;
+    transition: border-color 0.2s ease-in-out;
 }
 @media (hover: hover) and (pointer: fine) {
     .listElement:hover img {
